@@ -1,0 +1,37 @@
+.btn-green {
+    background-color: #2ECC71;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(#000, 0.3);
+    color: #000;
+    &:not(:disabled):hover {
+        background-color: lighten(#2ECC71, 10%);
+    }
+
+    &:disabled{
+        color:rgba(#000, 0.6);
+        background-color:  lighten(desaturate(#2ECC71, 30%), 30%);
+        cursor: default;
+
+    }
+}
+
+.btn-red {
+    background-color: #C70039;
+    border: none;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(#000, 0.3);
+    &:hover {
+        background-color: darken(#C70039, 10%);
+    }
+
+    &:disabled{
+        color:rgba(#fff, 0.6);
+        background-color:  lighten(desaturate(#C70039, 20%), 40%);
+        cursor: default;
+
+    }
+}
